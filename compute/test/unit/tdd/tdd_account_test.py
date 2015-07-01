@@ -22,7 +22,7 @@ class TDDTestAccount(unittest.TestCase):
         self.assertEqual(tddaccount.account_number,"001")
         self.assertEqual(tddaccount.balance,100)
 
-    def test_object_to_store_accounts_and_data(self):
+    def test_new_object_to_store_accounts_and_data(self):
         """Bank object is needed to store all Accounts
         
         It can be a dictionary where key is account_number

@@ -5,7 +5,17 @@ from compute.tdd_account import TDDAccount
 from compute.tdd_bank import TDDBank
 
 class BankTest(unittest.TestCase):
-    """Accounts storage etc
+    """There is a blank method in tdd_account_test suggesting object creation
+
+    Bank object is needed to store all Accounts
+
+    It can be a dictionary where key is account_number
+    and value is balance
+    
+    Create tdd_bank_test
+    """
+
+    """Accounts storage
     """
     def test_bank_is_initially_empty(self):
         """test bank
