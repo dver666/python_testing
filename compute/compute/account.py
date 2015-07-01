@@ -16,5 +16,4 @@ class Account(object):
 
     def get_current_balance(self, id_num):
         response=requests.get("http://bog-account-uri/"+id_num)
-        return {'status': response.status_code,
-                'data': response.text}
+        return {'status': response.status_code, 'data': response.text}
