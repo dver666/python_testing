@@ -1,6 +1,6 @@
 import requests
 
-class ConnectionError(Exccvception):
+class ConnectionError(Exception):
     pass
 
 class Account(object):
@@ -15,4 +15,6 @@ class Account(object):
         return result
 
     def get_current_balance(self, id_num):
-        return requests.get("http://bog-account-uri/"+id_num)
+        response=requests.get("http://bog-account-uri/"+id_num)
+        return {'status': response.status_code,
+                'data': response.text}
